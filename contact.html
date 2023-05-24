@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="./assets/icons8-store-96.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body  style="background-image: url('./assets/Horimiya-Merch-Web-Banner.jpg'); background-size: cover; object-fit: cover;"> 
+<header>
+            <div class="main__navbar">
+                <div class="main__navbar-logo">
+                  <a href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+                </div>
+                <div class="main__navbar-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./index.html #store">Store</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+</header>
+
+
+<div class="contact-page section__padding">
+    <div class="faq-container">
+      <h2>Frequently asked Questions</h2>
+      <div class="faq-box">
+        <div class="question" onclick="toggleReply('reply1')">How long does it take for me to receive my order?</div>
+        <div class="reply" id="reply1"> We're a print-on-demand company so please allow 3 to 5 business days of processing time depending on the product type</div>
+        <div class="question" onclick="toggleReply('reply2')">What is your return and exchange policy?</div>
+        <div class="reply" id="reply2">Due to the production method we use for all of our products, we cannot accept returns unless the item is proven damaged/defective.</div>
+        <div class="question" onclick="toggleReply('reply3')">How do I track the status of my order?</div>
+        <div class="reply" id="reply3">As soon as your order has shipped out, you will receive a confirmation email with your tracking number.</div>
+        <div class="question" onclick="toggleReply('reply4')">How do I receive customer support?</div>
+        <div class="reply" id="reply4">We look forward to helping you with your inquiry,fill up the form and submit your query.</div>
+        <div class="question" onclick="toggleReply('reply5')">Do you ship to my country?</div>
+        <div class="reply" id="reply5">YES. No matter where you live, we ship our products all over the world.</div>
+        <div class="question" onclick="toggleReply('reply6')">Will my items come in one package?</div>
+        <div class="reply" id="reply6">If you have ordered multiple different items, they may be sent separately.</div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <form >
+        <label for="name">Full Name:</label>
+        <input type="text" placeholder="Your Name" id="name" name="name" maxlength="100" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Example@email.com" id="email" name="email" maxlength="80" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option disabled selected value="">Select an option</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="russia">Russia</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+            <option value="korea">Korea</option>
+          </select>
+  
+        <label for="message">Message:</label>
+        <input type='textarea' id="message" name="message" required>
+  
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+
+</div>
+
+<footer class="footer">
+  <div class="footer__container">
+      <div class="footer__column">
+        <h3 class="footer__heading">About Us</h3>
+        <p class="footer__text">Discover the world of Horimiya with our exclusive collection of merchandise. We are passionate about bringing you the best quality products inspired by this beloved anime and manga series.</p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__heading">Contact</h3>
+        <p class="footer__text">Email: info@example.com</p>
+        <p class="footer__text">Phone: +1 123 456 7890</p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__heading">Follow Us</h3>
+        <ul class="footer__social-links">
+          <li><a href="https://www.instagram.com/p/BgSlRglAKBn/?hl=en" rel="nofollow" target="_blank"  class="footer__social-link">
+              <img src="./assets/logo-insta.png" alt="Instagram" >
+              Instagram</a></li>
+          <li><a href="https://twitter.com/home?lang=en" target="_blank" class="footer__social-link">
+              <img src="./assets/logo-twitter.png" alt="Twitter" >
+              Twitter</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <img src="./assets/logo-fb.png" alt="Twitter" >
+              Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__terms"><a href="#" class="footer__terms-link">Terms of Service</a> | <a href="#" class="footer__terms-link">Privacy Policy</a></p>
+      <p class="footer__copyright">&copy; 2023 Horimiya. All rights reserved.</p>
+  </div>
+
+</footer>
+</body>
+</html>
